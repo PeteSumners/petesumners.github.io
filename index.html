@@ -1,34 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="A personal website to showcase my projects and hobbies.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pete's Website</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>WebGL Atlas Quad</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <p>This is a place where I showcase my projects and hobbies.</p>
-    </header>
-
-    <div class="section" id="about">
-        <h2>About Me</h2>
-        <p>Hi, I’m a web developer and a tech enthusiast. I love building websites and learning about new technologies.</p>
-        <img src="pixel_art.jpg" alt="there should be pixel art here!">
-    </div>
-
-    <div class="section" id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="https://github.com/PeteSumners" class="project-link">Project 1</a></li>
-            <li><a href="https://getfastdata.com" class="project-link">Project 2</a></li>
-        </ul>
-    </div>
-
-    <footer>
-        <p>Contact me at <a href="petesumners@outlook.com">petesumners@outlook.com</a></p>
-    </footer>
+    <canvas id="glCanvas"></canvas>
+    <input id="rotationSpeed" type="range" min="0" max="2" step="0.1" value="1">
+    <script src="TexturedQuad.js"></script>
+    <script src="AtlasQuad.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
